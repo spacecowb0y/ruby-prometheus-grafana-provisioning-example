@@ -9,5 +9,6 @@ RUN bundle install
 
 COPY . /app
 
-CMD puma -p 5500
+CMD ["bundle", "exec", "puma", "-p", "5500"]
+
 EXPOSE 5500

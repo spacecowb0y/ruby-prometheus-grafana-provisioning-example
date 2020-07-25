@@ -1,4 +1,4 @@
-FROM grafana/grafana:5.4.3
+FROM grafana/grafana:latest
 
 COPY ./provisioning/dashboards/*.yml /etc/grafana/provisioning/dashboards/
 COPY ./provisioning/datasources/*.yml  /etc/grafana/provisioning/datasources/
